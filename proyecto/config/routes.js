@@ -10,6 +10,8 @@
 
 module.exports.routes = {
 
+  
+
   /***************************************************************************
   *                                                                          *
   * Make the view located at `views/homepage.ejs` your home page.            *
@@ -20,6 +22,10 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': { view: 'pages/homepage' },
+
+  'GET /usuarios': 'UserController.getAllUsers',
+  'GET /articulos': 'UserController.getArticulos'
+  
 
 
   /***************************************************************************
