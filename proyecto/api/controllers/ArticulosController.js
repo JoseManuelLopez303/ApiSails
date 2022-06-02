@@ -6,7 +6,10 @@
  */
 
 module.exports = {
-  
+    getAllUsers: async function (req , res){
+        var misArticulos = await User.find();
+        res.ok(misArticulos);
+    }
 
 };
 
